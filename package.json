@@ -3,7 +3,7 @@
 	"displayName": "ant-react-panpan",
 	"description": "ant Design超强联想代码块",
 	"keywords": ["ant", "react", "ant design"],
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"homepage": "https://github.com/xioasa/vscode-ant-react-panpan",
 	"repository": {
 		"type": "git",
