@@ -1,0 +1,95 @@
+{
+  "handleTableChange": {
+    "prefix": "handleTableChange",
+    "body": [
+      "/**",
+      " * 分页",
+      " * @param  {[type]} page    [description]",
+      " * @param  {[type]} filters [description]",
+      " * @param  {[type]} sorter  [description]",
+      " * @return {[type]}         [description]",
+      " */",
+      " handleTableChange = (page, filters, sorter) => {",
+      "   $1",
+      " }"
+    ],
+    "description": "表格onChange"
+  },
+
+  "formValidateFields": {
+    "prefix": ".formValue",
+    "body": [
+      "form.validateFields((err, values) => {",
+      "  if(!err) {",
+      "    $1",
+      "  }",
+      "}"
+    ],
+    "description": "获取并校验form表单的值"
+  },
+
+  "tableAddRender": {
+    "prefix": ".tableAddRender",
+    "body": [
+      "util.tableAddRender($1, '$2', (text, record) => {$3}"
+    ],
+    "description": "表格渲染"
+  },
+
+  "actionFetch": {
+    "prefix": ".fetch",
+    "body": [
+      "/**",
+      " * 获取数据",
+      " * @return {[type]} [description]",
+      " */",
+      "export function fetch(param) {",
+      "  return (dispatch) => {",
+      "    return fetchutil.get('url', { param }).then((res) => {",
+      "      res.data && dispatch({ type: '', data: res.data });",
+      "      return res;",
+      "    });",
+      "  };",
+      "}"
+    ],
+    "description": "get请求数据"
+  },
+
+  "actionSubmit": {
+    "prefix": ".submit",
+    "body": [
+      "/**",
+      " * 提交数据",
+      " * @return {[type]} [description]",
+      " */",
+      "export function submit(param) {",
+      "  return (dispatch) => {",
+      "    return fetchutil.post('url', { param });",
+      "  };",
+      "}"
+    ],
+    "description": "get请求数据"
+  },
+
+  "store": {
+    "prefix": ".store",
+    "body": [
+      "/**",
+      " * 数据",
+      " * @param  {Array}  state  [description]",
+      " * @param  {[type]} action [description]",
+      " * @return {[type]}        [description]",
+      " */",
+      "const $1 = (state = $2, action) => {",
+      "  switch (action.type) {",
+      "    case '$3':",
+      "      return action.data;",
+      "    default:",
+      "      return state;",
+      "  }",
+      "};"
+    ],
+    "description": "store仓库"
+  }
+  
+}

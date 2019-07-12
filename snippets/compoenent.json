@@ -1,0 +1,219 @@
+{
+  "Button": {
+    "prefix": ".Button",
+    "body": [
+       "<Button onClick={}>$1</Button>"
+    ],
+    "description": "Button普通"
+  },
+
+  "Button.primary": {
+    "prefix": ".Button.primary",
+    "body": [
+       "<Button type={'primary'} onClick={}>$1</Button>"
+    ],
+    "description": "Button普通"
+  },
+
+  "columns.render": {
+    "prefix": ".columns.render",
+    "body": [
+     "const columns = [",
+     "  {",
+     "    key: 'index',",
+     "    dataIndex: 'index',",
+     "    title: '序号',",
+     "    width: 100,",
+     "    render: (text, record, index) => index + 1",
+     "  }",
+     "];"
+    ],
+    "description": "columns表头+render"
+  },
+
+  "columns": {
+    "prefix": ".columns",
+    "body": [
+     "const columns = [",
+     "  {",
+     "    key: 'index',",
+     "    dataIndex: 'index',",
+     "    title: '序号',",
+     "    width: 100,",
+     "  }",
+     "];"
+    ],
+    "description": "columns表头"
+  },
+
+  "Table": {
+    "prefix": ".Table",
+    "body": [
+      "<Table",
+      "  columns={[]}",
+      "  dataSource={[]}",
+      "  rowKey={'id'}",
+      "  pagination={false}",
+      "  scroll={{ y: document.documentElement.clientHeight - 260 }}",
+      "/>"
+    ],
+    "description": "Table--无分页"
+  },
+
+  "Table.pagination": {
+    "prefix": ".Table.pagination",
+    "body": [
+      "<Table",
+      "  columns={[]}",
+      "  dataSource={[]}",
+      "  rowKey={'id'}",
+      "  pagination={util.pagination()}",
+      "  scroll={{ y: document.documentElement.clientHeight - 260 }}",
+      "/>"
+    ],
+    "description": "Table--有分页"
+  },
+
+  "Modal": {
+    "prefix": ".Modal",
+    "body": [
+      "<Modal",
+      "  title={'$1'}",
+      "  visible={false}",
+      "  onCancel={() => {}}",
+      "  maskClosable={false}",
+      "  footer={[",
+      "    <Button key={'1'} type={'primary'} onClick={() => {}}>确认</Button>,",
+      "    <Button key={'2'} onClick={() => {}}>取消</Button>,",
+      "  ]}",
+      ">",
+      "</Modal>"
+    ],
+    "description": "Modal--弹框"
+  },
+
+  "Form.FormItem": {
+    "prefix": ".Form.FormItem",
+    "body": [
+      "<Form>",
+      "  <FormItem",
+      "    label={'$1'}",
+      "  >",
+      "    {getFieldDecorator('$2')(",
+      "       $3",
+      "    )}",
+      "  </FormItem>",
+      "</Form>"
+    ],
+    "description": "Form--含有FormItem"
+  },
+
+  "Input": {
+    "prefix": ".Input",
+    "body": [
+      "<Input placeholder={'$1'} />"
+    ],
+    "description": "Input"
+  },
+
+  "RangePicker": {
+    "prefix": ".RangePicker",
+    "body": [
+      "<DatePicker.RangePicker",
+      "  format={'YYYY-MM-DD'}",
+      "/>"
+    ],
+    "description": "日期"
+  },
+
+  "Select": {
+    "prefix": ".Select",
+    "body": [
+      "<Select",
+      "  allowClear",
+      ">",
+      "  {[].map((item) => {",
+      "    return (<Option key={item.id} value={item.value}>{item.name}</Option>);",
+      "  })}",
+      "</Select>"
+    ],
+    "description": "Select"
+  },
+
+  "RadioGroupButton": {
+    "prefix": ".Radio.Group.Button",
+    "body": [
+      "<RadioGroup",
+      "  defaultValue={$1}",
+      "  onChange={$2}",
+      ">",
+      "  <RadioButton>$3</RadioButton>",
+      "</RadioGroup>"
+    ],
+    "description": "单选button按钮"
+  },
+
+  "RadioGroup": {
+    "prefix": ".Radio.Group",
+    "body": [
+      "<RadioGroup",
+      "  defaultValue={$1}",
+      "  onChange={$2}",
+      ">",
+      "  <Radio>$3</Radio>",
+      "</RadioGroup>"
+    ],
+    "description": "单选按钮"
+  },
+
+  "Tabs": {
+    "prefix": ".Tabs",
+    "body": [
+      "<Tabs",
+      "  animated={false}",
+      "  className={'page-wrapper-tabs'}",
+      "  onChange={}",
+      "  activeKey={}",
+      "  type={'card'}",
+      ">",
+      "  <TabPane key={'1'}>",
+      " ",
+      "  </TabPane>",
+      "</Tabs>"
+    ],
+    "description": "Tabs切换含map"
+  },
+
+  "TabsMap": {
+    "prefix": ".Tabs.map",
+    "body": [
+      "<Tabs",
+      "  animated={false}",
+      "  className={'page-wrapper-tabs'}",
+      "  onChange={}",
+      "  activeKey={}",
+      "  type={'card'}",
+      ">",
+      "  {[].map((tab, i) => {",
+      "    return (",
+      "      <TabPane tab={tab.label} key={tab.key}>",
+      "         ",
+      "      </TabPane>",
+      "    );",
+      "  })}",
+     "</Tabs>"
+    ],
+    "description": "Tabs切换含map"
+  },
+
+  "TabPane": {
+    "prefix": ".TabPane",
+    "body": [
+      "<TabPane key={$1}>",
+      "",
+      "</TabPane>"
+    ],
+    "description": "Tabs切换含map"
+  }
+
+}
