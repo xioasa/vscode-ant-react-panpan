@@ -25,7 +25,39 @@
       "  }",
       "}"
     ],
-    "description": "获取并校验form表单的值"
+    "description": "form.validateFields"
+  },
+
+  "resetFields": {
+    "prefix": ".formresetFields",
+    "body": [
+      "form.resetFields($1)"
+    ],
+    "description": "重置表单form.resetFields()"
+  },
+
+  "setFieldsValue": {
+    "prefix": ".formsetFieldsValue",
+    "body": [
+      "form.setFieldsValue({$1})"
+    ],
+    "description": "设置表单对应的字段form.setFieldsValue"
+  },
+
+  "getFieldValue": {
+    "prefix": ".formgetFieldValue",
+    "body": [
+      "form.getFieldValue('$1')"
+    ],
+    "description": "获取单个表单值"
+  },
+
+  "getFieldsValue": {
+    "prefix": ".formgetFieldsValue",
+    "body": [
+      "form.getFieldsValue([$1])"
+    ],
+    "description": "获取多个表单值"
   },
 
   "tableAddRender": {
@@ -90,6 +122,13 @@
       "};"
     ],
     "description": "store仓库"
+  },
+
+  "log": {
+    "prefix": ".log",
+    "body": [
+      "console.log('$1', $1);"
+    ],
+    "description": "console.log()"
   }
-  
 }

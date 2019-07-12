@@ -15,37 +15,6 @@
     "description": "Button普通"
   },
 
-  "columns.render": {
-    "prefix": ".columns.render",
-    "body": [
-     "const columns = [",
-     "  {",
-     "    key: 'index',",
-     "    dataIndex: 'index',",
-     "    title: '序号',",
-     "    width: 100,",
-     "    render: (text, record, index) => index + 1",
-     "  }",
-     "];"
-    ],
-    "description": "columns表头+render"
-  },
-
-  "columns": {
-    "prefix": ".columns",
-    "body": [
-     "const columns = [",
-     "  {",
-     "    key: 'index',",
-     "    dataIndex: 'index',",
-     "    title: '序号',",
-     "    width: 100,",
-     "  }",
-     "];"
-    ],
-    "description": "columns表头"
-  },
-
   "Table": {
     "prefix": ".Table",
     "body": [

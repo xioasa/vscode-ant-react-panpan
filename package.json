@@ -1,9 +1,9 @@
 {
 	"name": "ant-react-panpan",
 	"displayName": "ant-react-panpan",
-	"description": "ant Design超强联想输入代码块",
+	"description": "ant Design超强联想代码块",
 	"keywords": ["ant", "react", "ant design"],
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"homepage": "https://github.com/xioasa/vscode-ant-react-panpan",
 	"repository": {
 		"type": "git",
@@ -12,7 +12,7 @@
 	"icon": "icon/icon.png",
 	"publisher": "xiaosa",
 	"engines": {
-		"vscode": "^1.36.0"
+		"vscode": "^1.25.0"
 	},
 	"categories": [
 		"Other"
@@ -46,6 +46,14 @@
 			{
 				"language": "javascript",
 				"path": "./snippets/function.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/props&var.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/props&var.json"
 			}
 		],
 		"commands": [
@@ -62,7 +70,7 @@
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
+		"@types/vscode": "^1.25.0",
 		"eslint": "^5.13.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",

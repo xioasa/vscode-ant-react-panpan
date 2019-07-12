@@ -1,0 +1,55 @@
+{
+  "resetFields": {
+    "prefix": ".rules",
+    "body": [
+      "rules: [",
+      "  { required: true, message: '$1' }",
+      "],"
+    ],
+    "description": "表单校验规则"
+  },
+
+  "columns.render": {
+    "prefix": ".columns.render",
+    "body": [
+     "const columns = [",
+     "  {",
+     "    key: 'index',",
+     "    dataIndex: 'index',",
+     "    title: '序号',",
+     "    width: 100,",
+     "    render: (text, record, index) => index + 1",
+     "  },",
+     "];"
+    ],
+    "description": "columns表头+render"
+  },
+
+  "columns": {
+    "prefix": ".columns",
+    "body": [
+     "const columns = [",
+     "  {",
+     "    key: 'index',",
+     "    dataIndex: 'index',",
+     "    title: '序号',",
+     "    width: 100,",
+     "  },",
+     "];"
+    ],
+    "description": "columns表头"
+  },
+
+  "columns.con": {
+    "prefix": ".{",
+    "body": [
+      "{",
+      "  key: 'index',",
+      "  dataIndex: 'index',",
+      "  title: '序号',",
+      "  width: 100,",
+      "},"
+    ],
+    "description": "表格渲染配置"
+  }
+}
