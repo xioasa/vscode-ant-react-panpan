@@ -1,9 +1,9 @@
 {
 	"name": "ant-react-panpan",
 	"displayName": "ant-react-panpan",
-	"description": "ant Design超强联想代码块",
+	"description": "基于antDesign-react的代码块",
 	"keywords": ["ant", "react", "ant design"],
-	"version": "1.0.5",
+	"version": "1.1.0",
 	"homepage": "https://github.com/xioasa/vscode-ant-react-panpan",
 	"repository": {
 		"type": "git",
@@ -54,6 +54,14 @@
 			{
 				"language": "javascript",
 				"path": "./snippets/props&var.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/help.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/help.json"
 			}
 		],
 		"commands": [

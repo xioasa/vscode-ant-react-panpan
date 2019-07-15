@@ -1,6 +1,6 @@
 {
   "handleTableChange": {
-    "prefix": "handleTableChange",
+    "prefix": ".handleTableChange",
     "body": [
       "/**",
       " * 分页",
@@ -25,7 +25,7 @@
       "  }",
       "}"
     ],
-    "description": "form.validateFields"
+    "description": "获取多个表单值并校验"
   },
 
   "resetFields": {
@@ -130,5 +130,39 @@
       "console.log('$1', $1);"
     ],
     "description": "console.log()"
+  },
+
+  "handleSaveDataToRouter": {
+    "prefix": ".saveDataToRouter",
+    "body": [
+      "/**",
+      "  * 储存数据到路由中",
+      "  * @param {Object} data [description]",
+      "  * @param {String} pathname [description]",
+      "  */",
+      "handleSaveDataToRouter = (data, pathname = '') => {",
+      "  const { location } = this.props;",
+      "  hashHistory.push({",
+      "    pathname: pathname || location.pathname,",
+      "    state: data,",
+      "  });",
+      "}"
+    ],
+    "description": "储存数据到路由中"
+  },
+
+  "handleGetDataToRouter": {
+    "prefix": ".getDataToRouter",
+    "body": [
+      "/**",
+      "  * 获取存在路由中的数据",
+      "  */",
+      "handleGetDataToRouter = () => {",
+      "  const { location } = this.props;",
+      "  const { state = {} } = location;",
+      "  return state;",
+      "}"
+    ],
+    "description": "获取存在路由中的数据"
   }
 }

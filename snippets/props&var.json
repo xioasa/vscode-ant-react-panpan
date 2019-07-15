@@ -10,7 +10,7 @@
   },
 
   "columns.render": {
-    "prefix": ".columns.render",
+    "prefix": ".columns-render",
     "body": [
      "const columns = [",
      "  {",

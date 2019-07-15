@@ -62,7 +62,7 @@
   },
 
   "Form.FormItem": {
-    "prefix": ".Form.FormItem",
+    "prefix": ".Form-FormItem",
     "body": [
       "<Form>",
       "  <FormItem",
@@ -110,7 +110,7 @@
   },
 
   "RadioGroupButton": {
-    "prefix": ".Radio.Group.Button",
+    "prefix": ".Radio-Group-Button",
     "body": [
       "<RadioGroup",
       "  defaultValue={$1}",
@@ -123,7 +123,7 @@
   },
 
   "RadioGroup": {
-    "prefix": ".Radio.Group",
+    "prefix": ".Radio-Group",
     "body": [
       "<RadioGroup",
       "  defaultValue={$1}",
@@ -154,7 +154,7 @@
   },
 
   "TabsMap": {
-    "prefix": ".Tabs.map",
+    "prefix": ".Tabs-map",
     "body": [
       "<Tabs",
       "  animated={false}",
