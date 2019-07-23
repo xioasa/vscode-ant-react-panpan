@@ -3,7 +3,7 @@
 	"displayName": "ant-react-panpan",
 	"description": "基于antDesign-react的代码块",
 	"keywords": ["ant", "react", "ant design"],
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"homepage": "https://github.com/xioasa/vscode-ant-react-panpan",
 	"repository": {
 		"type": "git",
@@ -28,15 +28,7 @@
 				"path": "./snippets/layout.json"
 			},
 			{
-				"language": "javascript",
-				"path": "./snippets/layout.json"
-			},
-			{
 				"language": "javascriptreact",
-				"path": "./snippets/compoenent.json"
-			},
-			{
-				"language": "javascript",
 				"path": "./snippets/compoenent.json"
 			},
 			{
@@ -44,23 +36,11 @@
 				"path": "./snippets/function.json"
 			},
 			{
-				"language": "javascript",
-				"path": "./snippets/function.json"
-			},
-			{
 				"language": "javascriptreact",
 				"path": "./snippets/props&var.json"
 			},
 			{
-				"language": "javascript",
-				"path": "./snippets/props&var.json"
-			},
-			{
 				"language": "javascriptreact",
-				"path": "./snippets/help.json"
-			},
-			{
-				"language": "javascript",
 				"path": "./snippets/help.json"
 			}
 		],

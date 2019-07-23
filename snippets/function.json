@@ -63,7 +63,7 @@
   "tableAddRender": {
     "prefix": ".tableAddRender",
     "body": [
-      "util.tableAddRender($1, '$2', (text, record) => {$3}"
+      "util.tableAddRender($1, '$2', (text, record) => {$3})"
     ],
     "description": "表格渲染"
   },
@@ -164,5 +164,21 @@
       "}"
     ],
     "description": "获取存在路由中的数据"
+  },
+
+  "message.success": {
+    "prefix": ".success",
+    "body": [
+      "message.success('$1');"
+    ],
+    "description": "成功提示"
+  },
+
+  "message.error": {
+    "prefix": ".error",
+    "body": [
+      "message.error('$1');"
+    ],
+    "description": "成功提示"
   }
 }
