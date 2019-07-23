@@ -3,7 +3,7 @@
 	"displayName": "ant-react-panpan",
 	"description": "基于antDesign-react的代码块",
 	"keywords": ["ant", "react", "ant design"],
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"homepage": "https://github.com/xioasa/vscode-ant-react-panpan",
 	"repository": {
 		"type": "git",
